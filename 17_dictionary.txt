@@ -1,0 +1,146 @@
+print("** Python Dictionary**")
+print("----------------------")
+
+"""
+
+    1. Dictionary is a collection of data type
+
+    2.  and dictionary has define as --> {"key" : "value"}
+
+"""
+-----------
+Example 1 :
+-----------
+
+user = {"name":"selva",
+        "age":"23",
+        "married":"no"}
+
+print(user)
+
+print(type(user))
+
+print(user["name"])
+
+print(user.get("age"))
+
+print(user.get("gender","undefine keys"))
+
+print(user.keys())
+
+print(user.values())
+
+print(user.items())
+
+print("-----------------------------------------------------------------------------------")
+-----------
+Example 2 :
+-----------
+
+user = {"name":"selva",
+        "age":"23",
+        "married":"no"}
+
+print(user)
+
+print("")
+
+print("Print the user variable value : ")
+
+for x in user:
+    print(x," ",user[x])
+
+print("")
+
+print("Print the user.keys value : ")
+
+for x in user.keys():
+    print(x)
+
+print("")
+
+print("Print the user.values value : ")
+
+for x in user.values():
+    print(x)
+
+print("")
+
+print("Print the user.item value : ")
+
+for x in user.items():
+    print(x)
+
+print("-----------------------------------------------------------------------------------")
+-----------
+Example 3 :
+-----------
+
+print("*********** changing values ***********")
+print("")
+
+user = {"name":"selva","age":"23","married":"no"}
+
+print(user)
+
+print("")
+
+user.update({"phone":"9500912258"})
+
+print(user)
+
+print("")
+
+user["name"] = "kumar"
+
+print(user)
+
+print("")
+
+user.pop("age")
+
+print(user)
+
+print("")
+
+user.clear()
+
+print(user)
+
+print("-----------------------------------------------------------------------------------")
+-----------
+Example 4 :
+-----------
+
+
+users = {
+         "user1":{"name":"selva","age":"24"},
+         "user2":{"name":"kumar","age":"25"}
+        }
+
+print(users)
+
+print("")
+
+# Retrieve user1's name and age
+user1_name = users["user1"]["name"]
+user1_age = users["user1"]["age"]
+
+user2_name = users["user2"]["name"]
+user2_age = users["user2"]["age"]
+
+# Print the values
+print("Retrieve user1's name and age : ")
+
+print("User1 Name:", user1_name)
+print("User1 Age:", user1_age)
+
+print("")
+
+print("Retrieve user2's name and age : ")
+
+print("User2 Name:", user2_name)
+print("User2 Age:", user2_age)
+
+print("-----------------------------------------------------------------------------------")
+

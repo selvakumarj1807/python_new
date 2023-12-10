@@ -1,0 +1,316 @@
+------------------
+Python Functions :
+------------------
+
+    1. A function is a block of code which only runs when it is called.
+
+    2. You can pass data, known as parameters, into a function.
+
+-----------
+Example 1 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+def welcome():
+    print("Welcome to python")
+
+
+# To call a function, use the function name followed by parenthesis:
+
+welcome()
+
+
+-----------
+Example 2 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**No return type without argument**")
+print('-----------------------------------')
+print('')
+
+def add():
+    a = int(input("Enter the number :"))
+    b = int(input("Enter the number :"))
+    c = a+b
+    print("Total is :",c)
+
+
+# To call a function, use the function name followed by parenthesis:
+
+add()
+
+
+-----------
+Example 3 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**No return type with argumaent**")
+print('---------------------------------')
+print('')
+
+def sub(a,b):
+    c = a-b
+    print("Difference is :",c)
+
+
+# To call a function, use the function name followed by parenthesis:
+
+sub(10,8)
+
+
+-----------
+Example 4 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Return type without argument**")
+print('--------------------------------')
+print('')
+
+def mul():
+    a = int(input("Enter the number :"))
+    b = int(input("Enter the number :"))
+    c = a*b
+    return c
+
+# To call a function, use the function name followed by parenthesis:
+
+d = mul()
+
+print("The multiple of two number is :",d)
+
+
+-----------
+Example 5 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Return type with argument**")
+print('-----------------------------')
+print('')
+
+def div(a,b):
+    d=a/b
+    return d
+
+
+# To call a function, use the function name followed by parenthesis:
+
+e = div(10,2)
+
+print("The division is :",e)
+
+
+-----------
+Example 6 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Arbitray argument function**")
+print('------------------------------')
+print('')
+
+"""
+
+1. Arbitray argument function (*)
+2. * is arbitray argument.
+3. that is multiple values using in parameters ")
+
+"""
+
+def class_10(*data):
+    print(data)
+
+    for user in data:
+        print(user)
+
+
+# To call a function, use the function name followed by parenthesis:
+        
+class_10("ram","mam","bom","leem")
+
+
+-----------
+Example 7 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Key word argument function**")
+print('------------------------------')
+print('')
+
+
+def data(name,age):
+    print(name," age is ", age)
+
+
+# To call a function, use the function name followed by parenthesis:
+    
+data(age = 25,name = "Ram")
+
+
+-----------
+Example 8 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Arbitrary keyword argument function**")
+print('---------------------------------------')
+print('')
+
+
+def details(**datas):
+    print(datas)
+
+    for x in datas.items():
+        print (x,)
+
+
+# To call a function, use the function name followed by parenthesis:
+        
+details(name = "selva",age = 24,married = "single")
+    
+
+-----------
+Example 9 :
+-----------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Default parameter function**")
+print('------------------------------')
+print('')
+
+
+def defaultpara(name,city = "salem"):
+    print(name,"your city is",city)
+
+
+# To call a function, use the function name followed by parenthesis:
+
+defaultpara(name = "selva",city = "madhurai")
+
+defaultpara(name = "selva")
+
+        
+------------
+Example 10 :
+------------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Passing a list as on argument function**")
+print('------------------------------------------')
+print('')
+
+
+def total(marks):
+    print("Total marks is :",sum(marks))
+
+
+# To call a function, use the function name followed by parenthesis:
+
+total(marks = [10,20,30,40,50])
+
+total([100,200,300,400,500])
+
+
+------------
+Example 11 :
+------------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Lambda function**")
+print('-------------------')
+print('')
+
+"""
+A lambda function can take any number of arguments,
+but can only have one expression.
+"""
+
+c = lambda a:a+50
+
+print('a:a+50  = ',c(5))
+
+d = lambda a,b:a*b
+
+print('a,b:a*b = ',d(10,10))
+
+
+------------
+Example 12 :
+------------
+
+print('Python Functions :')
+print('------------------')
+print("")
+
+print("**Recursive function**")
+print('----------------------')
+print('')
+
+
+"""
+ 1. It means that a function calls itself.
+ 2. This has the benefit of meaning that you can loop through data to reach a result.
+"""
+
+"""
+5 * factorial(5 -1) --> 5 * factorial(4) --> 5 * 24 = 120
+4 * factorial(4 -1) --> 4 * factorial(3) --> 4 * 6  = 24
+3 * factorial(3 -1) --> 3 * factorial(2) --> 3 * 2  = 6
+2 * factorial(2 -1) --> 2 * factorial(1) --> 2 * 1  = 2
+
+factorial(1) = 1
+"""
+
+
+def factorial(x):
+    if (x==1):
+        return 1
+    else:
+        return(x*factorial(x-1))
+    
+
+# To call a function, use the function name followed by parenthesis:
+
+print("factorial 5 :",factorial(5))
+
+
+
+
+

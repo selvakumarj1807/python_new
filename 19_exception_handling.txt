@@ -1,0 +1,228 @@
+--------------------
+Exception Handling :
+--------------------
+
+    When an error occurs, or exception as we call it, 
+    Python will normally stop and generate an error message.
+
+1. The try block lets you test a block of code for errors.
+
+2. The except block lets you handle the error.
+
+3. The else block lets you execute code when there is no error.
+
+4. The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+-----------
+Example 1 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+try:
+    a = 10/0
+
+except Exception as e:
+    print(e)
+
+
+-----------
+Example 2 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** exception else **")
+print("--------------------")
+print("")
+
+try:
+    a=10/20
+
+except Exception as e:
+    print(e)
+
+else:
+    print("A value is :",a)
+        
+
+-----------
+Example 3 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Try except else finally **")
+print("-----------------------------")
+print("")
+
+try:
+    a=10/5
+
+except Exception as e:
+    print(e)
+
+else:
+    print("A value is :",a)
+
+finally:
+    print("Thank you")
+
+
+-----------
+Example 4 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Types of exception in python **")
+print("----------------------------------")
+print("")
+
+print(dir(locals()['__builtins__']))
+
+print("")
+
+print("Length of errors : ",len(dir(locals()['__builtins__'])))
+
+
+-----------
+Example 5 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Name error **")
+print("----------------")
+print("")
+
+try:
+    print(a)
+
+except NameError as e:
+    print("A is not difined")
+
+
+-----------
+Example 6 :
+-----------
+
+ print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Zero division error **")
+print("-------------------------")
+print("")
+
+try:
+    a=10/0
+
+except ZeroDivisionError as e:
+    print("denominator cannot be zero")
+
+
+-----------
+Example 7 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Value error **")
+print("-----------------")
+print("")
+
+try:
+    a = int("string")
+
+except ValueError as e:
+    print("Enter only number")
+
+
+-----------
+Example 8 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Index error **")
+print("-----------------")
+print("")
+
+
+try:
+    a = [10,20,30,40,50]
+    print(a[10])
+
+except IndexError as e:
+    print("Invalid index")
+
+
+-----------
+Example 9 :
+-----------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** File not found error **")
+print("--------------------------")
+print("")
+
+
+try:
+    f=open("test.txt")
+
+except FileNotFoundError as e:
+    print("File is not in the folder")
+
+else:
+    print(f.read())
+
+
+------------
+Example 10 :
+------------
+
+print('Exception Handling :')
+print('--------------------')
+print("")
+
+print("** Handling multiple exception in python **")
+print("-------------------------------------------")
+print("")
+
+
+try:
+    a = 10/20
+    print(a)
+    b = [10,20,30,40,50]
+    print(b[10])
+
+except ZeroDivisionError :
+    print("Denominator cannot be zero")
+
+except IndexError:
+    print("Invalid index")
+
+
+
+
+
+
+

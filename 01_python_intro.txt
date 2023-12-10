@@ -1,0 +1,99 @@
+-------------------
+1. What is Python ?
+-------------------
+
+    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+-------------------
+2. It is used for :
+-------------------
+
+    1. web development (server-side),
+    2. software development,
+    3. mathematics,
+    4. system scripting.
+
+---------------
+3. Why Python ?
+---------------
+
+    1. Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+    2. Python has a simple syntax similar to the English language.
+
+--------------------------
+4. Execute Python Syntax :
+--------------------------
+
+---------------------------------------------------------------------------------------------------------------
+4.1 As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line :
+---------------------------------------------------------------------------------------------------------------
+
+    >>> print("Hello, World!")
+    Hello, World!
+
+-------------------------------------------------------------------------------------------------------------------
+4.2. Or by creating a python file on the server, using the .py file extension, and running it in the Command Line :
+-------------------------------------------------------------------------------------------------------------------
+
+    C:\Users\Your Name>python myfile.py
+
+-----------------------
+5. Python Indentation :
+-----------------------
+
+    1. Indentation refers to the spaces at the beginning of a code line.
+
+    2. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+    3. Python uses indentation to indicate a block of code.
+-----------
+Example 1 :
+-----------
+----------------------------
+Get your own Python Server :
+----------------------------
+
+if 5 > 2:
+  print("Five is greater than two!")
+
+-----------
+Example 2 : 
+-----------
+--------------
+Syntax Error :
+--------------
+
+if 5 > 2:
+print("Five is greater than two!")
+
+
+--------------------
+6. Python Comments :
+--------------------
+
+    1. Comments can be used to explain Python code.
+
+    2. Comments can be used to make the code more readable.
+
+    3. Comments can be used to prevent execution when testing code.
+
+
+-------------------------
+6.1. Single line comment:
+-------------------------
+
+    # This is a single line comment
+    print("Hello, World!")
+
+
+------------------------
+6.2. Multiline comment :
+------------------------
+
+    """
+    This is a multiline comment
+    This is a comment
+    written in
+    more than just one line
+    """
+    print("Hello, World!")

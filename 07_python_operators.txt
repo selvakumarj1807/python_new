@@ -1,0 +1,272 @@
+------------------
+Python Operators :
+------------------
+    Operators are used to perform operations on variables and values.
+
+        1. Arithmetic operators
+        2. Assignment operators
+        3. Comparison operators
+        4. Logical operators
+        5. Identity operators
+        6. Membership operators
+        7. Bitwise operators
+
+-------------------------
+1. Arithmetic operators :
+-------------------------
+
+print('-----Arithmetic Operator-------')
+print("-------------------------------")
+print("")
+
+
+a = 10
+
+b = 2
+
+print('Addition       : a+b =',a+b)
+
+print('Subtraction    : a-b =',a-b)
+
+print('Multiplication : a*b =',a*b)
+
+print('Devision       : a/b =',a/b) # through the quotient value
+
+print('modulus        : a%b =',a%b) # through the remainder value
+
+a = 2
+
+b = 5
+
+print('Exponentiation : a**b =',a**b)# 2*2*2*2*2 = 32
+
+a = 10
+
+b = 2
+
+print('Floor devision :', a,'//',b ,'=',a//b) # a//b --> a/b --> 10/2 = 5.0 = 5
+
+
+-------------------------
+2. Assignment operators :
+-------------------------
+
+print('Assignment operator : ')
+print("----------------------")
+print("")
+
+a = 10
+print('a = ',a)
+a += 5
+print('a += 5 --> a = a + 5 : ',a)
+
+a = 10
+print('a = ',a)
+a -= 5
+print('a -= 5 --> a = a - 5 : ',a)
+
+a = 10
+print('a = ',a)
+a *= 5
+print('a *= 5 --> a = a * 5 : ',a)
+
+a = 10
+print('a = ',a)
+a /= 5
+print('a /= 5 --> a = a / 5 : ',a)
+
+a = 10
+print('a = ',a)
+a %= 5
+print('a %= 5 --> a = a % 5 : ',a)
+
+a = 10
+print('a = ',a)
+a **= 5
+print('a **= 5 --> a = a ** 5 : ',a)
+
+a = 10
+print('a = ',a)
+a //= 5
+print('a //= 5 --> a = a // 5 : ',a)
+
+
+-------------------------
+3. Comparison operators :
+-------------------------
+
+print('Comparision OPerator : ')
+print("-----------------------")
+print("")
+
+
+a = 10
+b = 15
+
+print('Equal      :',a == b)
+
+print('Not Equal  :',a != b)
+
+print('Graterthan :',a > b)
+
+print('Less than  :',a < b)
+
+print('Graterthan or Equal to :',a >= b)
+
+print('Lessthan or Equal to  :',a <= b)
+
+
+----------------------
+4. Logical operators :
+----------------------
+
+print('Logical OPerater : ')
+print("-------------------")
+print("")
+
+
+a = 10
+
+if (a < 5 and a > 5):
+  print('AND OPerator')
+
+a=10
+if (a < 5 or a > 5):
+  print('OR OPerator')
+
+a=10
+if (not(a < 5 and a > 5)):
+  print('NOT OPerator')
+
+
+-----------------------
+5. Identity operators :
+-----------------------
+
+----------------
+5.1  Example 1 :
+----------------
+
+print('Identity operator : ')
+print("--------------------")
+print("")
+
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is z)
+
+# returns True because z is the same object as x
+
+print(x is y)
+
+# returns False because x is not the same object as y, even if they have the same content
+
+print(x == y)
+
+# to demonstrate the difference betweeen "is" and "==": this comparison returns True because x is equal to y
+
+
+---------------
+5.2 Example 2 :
+---------------
+
+print('Identity operator : ')
+print("--------------------")
+print("")
+
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is not z)
+
+# returns False because z is the same object as x
+
+print(x is not y)
+
+# returns True because x is not the same object as y, even if they have the same content
+
+print(x != y)
+
+# to demonstrate the difference betweeen "is not" and "!=": this comparison returns False because x is equal to y
+
+
+-------------------------
+6. Membership operators :
+-------------------------
+
+print('Membership Operators : ')
+print("-----------------------")
+print("")
+
+
+x = ["apple", "banana"]
+
+print("banana" in x)
+
+print("banana" not in x)
+
+
+----------------------
+7. Bitwise operators :
+----------------------
+
+print('Bit wise Operators : ')
+print("---------------------")
+print("")
+
+       # 10 = 1010
+a = 10 # 2  = 0010 (*)
+b = 2  #      ----
+       #      0010
+c = a & b
+
+print('bitwise And (&) : ',c)
+print('---------------------')
+       # 10 = 1010
+a = 10 # 2  = 0010 (+) 
+b = 2  #      ----
+       #      1010
+c = a | b
+
+print('bitwise or (|)  : ',c)
+print('---------------------')
+       # 1010
+a = 10 # 0010
+b = 2  # ----
+       # 1000
+c = a ^ b
+
+print('bitwise xor (^) : ',c)
+print('---------------------')
+
+a = 10
+
+c = ~a  # c = -(a + 1) --> c = -(10 + 1) --> c = -11
+
+print('bitwise not (~) : ',c)
+print('---------------------')
+
+a = 10
+
+b = a << 2 # b = 10 << 2 --> b = 10 * (2 * 2) --> b = 10 * 4 --> b = 40
+c = a << 3 # b = 10 << 3 --> b = 10 * (2 * 2 * 2) --> b = 10 * 8 --> b = 80
+
+print('Left shift opretor (<<)  : ',b)
+print('Left shift opretor (<<)  : ',c)
+
+print('------------------------------------')
+
+a = 10
+
+b = a >> 2 # b = 10 >> 2 --> b = 10 / (2 * 2) --> b = 10 / 4 --> b = 2
+c = a >> 3 # b = 10 >> 3 --> b = 10 / (2 * 2 * 2) --> b = 10 / 8 --> b = 1
+
+print('Right shift opretor (>>)  : ',b)
+print('Right shift opretor (>>)  : ',c)
+
+print('------------------------------------')

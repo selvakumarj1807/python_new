@@ -1,0 +1,101 @@
+-----------
+Example 1 :
+-----------
+
+print("Python Input Type  :")
+print("--------------------")
+print("")
+
+
+a = input('Enter your name :')
+
+print('your name is ',a)
+
+print("")
+
+b = int(input('Enter your age :'))
+
+print ('your age is ',b)
+
+
+
+-----------
+Example 2 :
+-----------
+
+print("Python Input Type  :")
+print("--------------------")
+print("")
+
+
+a1 = int(input('Enter a first value :'))
+
+b1 = int(input('Enter a second value :'))
+
+add = a1 + b1
+
+sub = a1 - b1
+
+mul = a1 * b1
+
+div = a1 / b1
+
+print (a1,' +',b1,' =',add)
+
+print (a1,' -',b1,' =',sub)
+
+print (a1,' *',b1,' =',mul)
+
+print (a1,' /',b1,' =',div)
+
+
+
+-----------
+Example 3 :
+-----------
+
+print("Python Input Type  :")
+print("--------------------")
+print("")
+
+
+para=["25","28","20"]
+print('/'.join(para))
+
+print("")
+
+name1,name2,name3 = input("Enter 3 name :").split(' ')
+
+print("name1 :",name1)
+print("name1 :",name2)
+print("name1 :",name3)
+
+
+-----------
+Example 4 :
+-----------
+
+print("Python Input Type  :")
+print("--------------------")
+print("")
+
+
+print("Input in multiple line (paragraph) :")
+print("------------------------------------")
+print("")
+
+para = []
+print("Enter a para :")
+while True:
+    line = input()
+    if line :
+        para.append(line)
+    else :
+        break
+
+print(para)
+
+print("")
+
+output ='\n'.join(para)
+print(output)

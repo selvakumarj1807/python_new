@@ -1,0 +1,97 @@
+-----------
+Example 1 :
+-----------
+
+print('While Loop : ')
+print("-------------")
+print("")
+
+print("Print the even numbers : ")
+print("-------------------------")
+print("")
+
+s = int(input("Enter the limit number : "))
+
+print("")
+
+i = 2
+while i<=s:
+    print(i)
+    i+=2
+
+
+-----------
+Example 2 :
+-----------
+
+print('While Loop : ')
+print("-------------")
+print("")
+
+print("Print the odd numbers : ")
+print("------------------------")
+print("")
+
+s = int(input("Enter the limit number : "))
+
+i = 1
+
+print("")
+
+while i <= s:
+    if i % 2 == 0:
+        i=i+1
+        continue;
+    print(i)
+    i += 1
+
+
+-----------
+Example 3 :
+-----------
+
+print('While Loop : ')
+print("-------------")
+print("")
+
+print("Python break keyword : ")
+print("-----------------------")
+print("")
+
+s = int(input("Enter the limit number : "))
+
+i = 1
+
+print("")
+
+while i <= s:
+    if i == 10:
+        break;
+    print(i)
+    i += 1
+
+
+-----------
+Example 4 :
+-----------
+
+print('While Loop : ')
+print("-------------")
+print("")
+
+print("Python pass keyword : ")
+print("----------------------")
+print("")
+
+s = int(input("Enter the limit number : "))
+
+i = 1
+
+print("")
+
+while i <= s:
+    if i == 10:
+        i += 1
+        pass;
+    print(i)
+    i += 1

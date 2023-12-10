@@ -1,0 +1,637 @@
+-----------
+Example 1 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+"""
+Object is a instance of class.
+"""
+
+class car():
+    pass
+
+
+a = 10
+
+print('Type of a   : ',type(a))
+
+print('Type of car : ',type(car))
+
+swift = car()
+
+print('swift = object : ',isinstance(swift,car)) # swift is instance of class car or not
+
+print('a = object     : ',isinstance(a,int)) # a is instance of class integer   or not
+
+print('type of swift  : ',type(swift)) # "__main__" is a speciel variable for the class
+
+
+-----------
+Example 2 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Get attribute method : ")
+print('-----------------------')
+print('')
+
+
+class student():
+    name = "selva"
+    age = 14
+
+
+print('Name : ',getattr(student,'name'))
+
+print('Age  : ',getattr(student,'age'))
+
+print('')
+
+print(getattr(student,'gender','No such attribute found'))
+
+
+-----------
+Example 3 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Dot notation : ")
+print('---------------')
+print('')
+
+
+class student():
+    name = "selva"
+    age = 14
+
+
+print('Name : ',student.name)
+
+print('Age  : ',student.age)
+
+
+-----------
+Example 4 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Set attribute : ")
+print('----------------')
+print('')
+
+
+class student():
+    pass
+
+setattr(student,'name','kumar')
+
+print('Name   : ',student.name)
+
+setattr(student,'gender','male')
+
+print('Gender : ',student.gender)
+
+student.city = "salem"
+
+print('City   : ',student.city)
+
+
+-----------
+Example 5 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Delete attribute : ")
+print('-------------------')
+print('')
+
+
+class student():
+    age = 25
+    name = 'selva'
+    city = 'salem'
+
+
+print('Class Attribute values : ')
+print('-------------------------')
+print('')
+
+print(student.__dict__)
+
+print('')
+
+delattr(student,'age')
+
+print('After Delete age attribute : ')
+print('-----------------------------')
+print('')
+
+print(student.__dict__)
+
+print('')
+
+del student.city
+
+print('After Delete city attribute : ')
+print('------------------------------')
+print('')
+
+print(student.__dict__)
+
+
+-----------
+Example 6 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Instanse (object) attribute : ")
+print('------------------------------')
+print('')
+
+
+class user():
+    course = "java"
+
+print('Course in class : ',user.course)
+
+print('')
+
+o1 = user()
+
+print('Course in object o1 : ',o1.course)
+
+o1.course = "Python"
+
+print('Course in object o1 : ',o1.course)
+
+print('Course in class : ',user.course)
+
+o2 = user()
+
+print('Course in object o2 : ',o2.course)
+
+
+-----------
+Example 7 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Class Method in Python : ")
+print('-------------------------')
+print('')
+
+
+class student1():
+    name = "selva"
+    age = 25
+
+    def printall():
+        print("Name is :",student1.name)
+        print("Age is  :",student1.age)
+
+
+# Class_name.function_name()
+
+student1.printall()
+
+print('')
+
+getattr(student1,'printall')()
+
+
+-----------
+Example 8 :
+-----------
+
+"""
+The self Parameter :
+--------------------
+    1. The self parameter is a reference to the current instance of the class, 
+    2. and is used to access variables that belongs to the class.
+"""
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print("Instanse method & Passing a value: ")
+print('-----------------------------------')
+print('')
+
+
+class student2():
+    name = "kumar"
+    age = 23
+
+    def printall(self,gender):
+        print("Neme is   :",student2.name)
+        print("Age is    :",student2.age)
+        print("Gender is :",gender)
+
+o = student2()
+
+print('Call the function from Object : ')
+print('-------------------------------')
+print('')
+
+o.printall('male')
+
+print('')
+print('Call the function from Class : ')
+print('-------------------------------')
+print('')
+
+student2.printall(o,'female')
+
+
+-----------
+Example 9 :
+-----------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" __init__ method : ")
+print('-------------------')
+print('')
+
+"""
+ __init__ method - constructor method for value intialization
+ 
+"""
+
+
+class user1:
+    def __init__(self,name):
+        print("new object(attribute)are created")
+        self.name = name
+
+    def printall(self):
+        print("Name is :",self.name)
+        
+
+o = user1('selva')
+
+print('')
+print("-----------------------------------------------")
+
+o1 = user1('selva')
+
+o1.printall()
+
+print("-----------------------------------------------")
+
+o2 = user1('kumar')
+
+o2.printall()
+
+
+------------
+Example 10 :
+------------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Property decretor Example 1 : ")
+print('--------------------------------')
+print('')
+
+
+
+class user2:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        self.msg = "Name is :"+self.name+"  Age is :"+ str(self.age)
+
+    def msg(self):
+        return "Name is :"+self.name+"  Age is :"+ str(self.age)
+
+    
+
+a = user2('selva',25)
+
+print(a.name)
+
+print(a.age)
+
+print(a.msg)
+
+a.age = 39
+
+print(a.msg)
+
+
+------------
+Example 11 :
+------------
+
+"""
+The self Parameter :
+--------------------
+    1. The self parameter is a reference to the current instance of the class, 
+    2. and is used to access variables that belongs to the class.
+"""
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Property decretor Example 2 : ")
+print('-------------------------------')
+print('')
+
+
+
+class user2:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        # self.msg = "Name is :"+self.name+"  Age is :"+ str(self.age)
+
+    def msg(self):
+        return "Name is :"+self.name+"  Age is :"+ str(self.age)
+
+    
+
+a = user2('selva',25)
+
+print(a.name)
+
+print(a.age)
+
+print(a.msg())
+
+a.age = 39
+
+print(a.msg())
+
+a.age = 40
+
+print(a.msg())
+
+
+------------
+Example 12 :
+------------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Property decretor Example 3 : ")
+print('-------------------------------')
+print('')
+
+
+class user2:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        # self.msg = "Name is :"+self.name+"  Age is :"+ str(self.age)
+
+    @property
+    def msg(self):
+        return "Name is :"+self.name+"  Age is :"+ str(self.age)
+
+    
+a = user2('selva',25)
+
+print(a.name)
+
+print(a.age)
+
+print(a.msg)
+
+a.age = 39
+
+print(a.msg)
+
+a.age = 40
+
+print(a.msg)
+
+
+------------
+Example 13 :
+------------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Property decorator getter and setter : ")
+print('----------------------------------------')
+print('')
+
+
+class stud:
+    def __init__(self,total):
+        self._total = total   #_total is private variable
+
+    def average(self):
+        return self._total/5.00
+    
+    @property
+    def total(self):
+        return self._total
+    
+    @total.setter
+    def total(self,t):
+        if t<0 or t>500:
+            print("Invalid total is above 500")
+
+        else:
+            self._total = t
+
+    
+b = stud(450)
+
+print("Total is   : ",b.total)
+
+print("Average is : ",b.average())
+
+print('')
+
+b.total = 550
+
+print("Total is   : ",b.total)
+
+print("Average is : ",b.average())
+
+print('')
+
+b.total = 250
+
+print("Total is : ",b.total)
+
+print("Average is : ",b.average())
+
+
+------------
+Example 14 :
+------------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Property method (Function) : ")
+print('------------------------------')
+print('')
+
+
+class stud1:
+    def __init__(self,total):
+        self._total = total   #_total is private variable
+
+    def average(self):
+        return self._total/5.00
+    
+    def getter(self):
+        return self._total
+    
+    def setter(self,t):
+        if t<0 or t>500:
+            print("Invalid total is above 500")
+
+        else:
+            self._total = t
+
+    total = property(getter,setter)
+
+
+b = stud1(450)
+
+print("Total is   :",b.total)
+
+print("Average is :",b.average())
+
+print('')
+
+b.total = 550
+
+print("Total is   :",b.total)
+
+print("Average is :",b.average())
+
+print('')
+
+b.total=250
+
+print("Total is   :",b.total)
+
+print("Average is :",b.average())
+
+
+------------
+Example 15 :
+------------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Class method decoretor in python : ")
+print('------------------------------------')
+print('')
+
+
+class students:
+    count = 0
+
+    def __init__(self,name,age) :
+        self.name = name
+        self.age = age
+        students.count += 1
+
+    def printDetails(self):
+        return print("Name is :",self.name,"Age is :",self.age)
+    
+    @classmethod
+    def total(cls):
+        return cls.count
+    
+ab = students("selva",25)
+
+ab.printDetails()
+
+print("Total admission :",ab.total())
+
+print('')
+
+ba = students("kumar",27)
+
+ba.printDetails()
+
+print("Total admission :",ba.total())
+
+print('')
+
+print("Total admission :",students.total())
+
+
+------------
+Example 16 :
+------------
+
+print("Class & Object : ")
+print("-----------------")
+print("")
+
+print(" Static method in python - common for all : ")
+print('--------------------------------------------')
+print('')
+
+
+class empl:
+
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def printempl(self):
+        return print("Employee name is :",self.name,"Employee age is :",self.age)
+
+    @staticmethod
+    def welcome():
+        print("welcom to our company")
+
+sa = empl("selva",25)
+
+sa.printempl()
+
+empl.welcome()
+
+print('')
+
+sb = empl("kumar",23)
+
+sb.printempl()
+
+empl.welcome()
+

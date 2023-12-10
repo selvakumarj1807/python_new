@@ -1,0 +1,23 @@
+print(" String Manipulation :")
+print("----------------------")
+print("")
+
+
+a = "hi this is tamil info technology"
+
+
+print(a)
+
+print(a[0:2])
+
+print(a[:5])
+
+print(a[1:])
+
+print(a[-1])
+
+print(a[-2:-1])
+
+print(a[:-1])
+
+print(a[::-1])

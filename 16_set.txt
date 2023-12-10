@@ -1,0 +1,217 @@
+print("Python Set")
+print("----------")
+print("")
+
+"""
+    1. set to remove the duplicate value
+
+    2. and set is define --> {}
+
+    3. set is collection of data dype
+
+"""
+-----------
+Example 1 :
+-----------
+
+a = {1,2,3,4,2,1,3}
+
+print("a : ",a)
+
+print("")
+
+print("type(a) : ",type(a))
+
+
+print("------------------------------------------------------------------------------------------------------")
+-----------
+Example 2 :
+-----------
+
+set1 = {1,2,3,4,2,1,3}
+
+print("set1 : ",set1)
+
+print("")
+
+set2 = set1 # set(set1)
+
+print("set2",set2)
+
+print("")
+
+set2.add(5)
+
+print("After add(5) in set2 : ")
+
+print("")
+
+print("set1 : ",set1)
+
+print("")
+
+print("set2",set2)
+
+print("------------------------------------------------------------------------------------------------------")
+-----------
+Example 3 :
+-----------
+
+
+set1 = {1,2,3,4,2,1,3}
+
+print("set1 : ",set1)
+
+print("")
+
+set2 = set1.copy()
+
+print("set2",set2)
+
+print("")
+
+set2.add(5)
+
+print("After add(5) in set2 : ")
+
+print("")
+
+print("set1 : ",set1)
+
+print("")
+
+print("set2",set2)
+
+("------------------------------------------------------------------------------------------------------")
+-----------
+Example 4 :
+-----------
+
+
+names = {"sara","meera","thara","meera","sara"}
+
+print(names)
+
+print("")
+
+print(type(names))
+
+print("")
+
+a = {"deena","meena"}
+
+names.update(a)
+
+print(names)
+
+print("")
+
+print("Using for loop : ")
+
+for i in (names):
+    print(i)
+
+print("")
+
+print("Using if condition : ")
+
+print("")
+
+if "sara" in names:
+    print("yes sara is there")
+
+else:
+    print("No sara is not in your object (variable)")
+
+("------------------------------------------------------------------------------------------------------")
+-----------
+Example 5 :
+-----------
+
+
+names = {"sara","meera","thara","meera","sara"}
+
+print(names)
+
+print("")
+
+names.remove("meera")
+
+print(names)
+
+print("")
+
+names.discard("reena")
+
+print(names)
+
+print("")
+
+names.remove("reena")
+
+print(names)
+
+("------------------------------------------------------------------------------------------------------")
+-----------
+Example 6 :
+-----------
+
+
+names = {"sara","meera","thara","meera","sara"}
+
+print(names)
+
+print("")
+
+del(names)
+
+print(names)
+
+("------------------------------------------------------------------------------------------------------")
+-----------
+Example 7 :
+-----------
+
+
+a = {1,2,3,4,5}
+
+b = {'a','b','c','d'}
+
+c = a.union(b)
+
+print(c)
+
+print("******************")
+
+d = {1,2,3,4,5}
+
+e = {6,5,7,8,9}
+
+f = d.intersection(e)
+
+print(f)
+
+print("")
+
+d.intersection_update(e)
+
+print(d)
+
+print("******************")
+
+d = {1,2,3,4,5}
+
+e = {6,5,7,8,9}
+
+g = d.symmetric_difference(e)
+
+print(g)
+
+print("")
+
+d.symmetric_difference_update(e)
+
+print(d)
+
+("------------------------------------------------------------------------------------------------------")
+

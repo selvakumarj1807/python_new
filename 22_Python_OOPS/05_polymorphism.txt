@@ -1,0 +1,108 @@
+---------------------
+Python Polymorphism :
+---------------------
+
+    The word "polymorphism" means "many forms", and in programming it refers to 
+    methods/functions/operators with the same name that can be executed on many objects or classes.
+-----------
+Example 1 :
+-----------
+
+print(" Polymorphism : ")
+print("----------------")
+print("")
+
+print("** Different classes with the same method **")
+print('--------------------------------------------')
+print('')
+
+"""
+1. Polymorphism is often used in Class methods,
+    where we can have multiple classes with the same method name.
+
+For example :
+-------------
+
+    we have three classes: Car, Boat, and Plane,
+    and they all have a method called move():
+"""
+
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print('Car class   : ',"Drive!")
+
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print('Boat class  : ',"Sail!")
+
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print('Plane class : ',"Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car class
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat class
+plane1 = Plane("Boeing", "747")     #Create a Plane class
+
+for x in (car1, boat1, plane1):
+  x.move()
+
+-----------
+Example 2 :
+-----------
+
+print(" Polymorphism : ")
+print("----------------")
+print("")
+
+print("** Inheritance Class Polymorphism **")
+print('--------------------------------------------')
+print('')
+
+"""
+If we use the example and make a parent class called Vehicle,
+and make Car, Boat, Plane child classes of Vehicle,
+the child classes inherits the Vehicle methods, but can override them.
+"""
+
+class Vehicle:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Move!")
+
+class Car(Vehicle):
+  pass
+
+class Boat(Vehicle):
+  def move(self):
+    print("Sail!")
+
+class Plane(Vehicle):
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang") #Create a Car object
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+plane1 = Plane("Boeing", "747") #Create a Plane object
+
+for x in (car1, boat1, plane1):
+  print(x.brand)
+  print(x.model)
+  x.move()
+  print('')
+  
+ 

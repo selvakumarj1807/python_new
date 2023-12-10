@@ -1,0 +1,22 @@
+--------------
+Type casting :
+--------------
+    Typecasting in Python allows programmers to convert variables or data from one data type to another data type.
+
+---------
+Example :
+---------
+
+print("Python Type casting :")
+print("---------------------")
+print("")
+
+
+a = int(25.26)
+
+b = float(15)
+
+print(a,type(a))
+
+print(b,type(b))
+

@@ -1,0 +1,211 @@
+------
+List :
+------
+
+    1. Lists are used to store multiple items in a single variable.
+
+    2. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+    3. Lists are created using square brackets [ ] 
+
+-----------
+Example 1 :
+-----------
+
+print('Python List : ')
+print("---------------")
+print("")
+
+
+a = [1,2,3,4,5]
+
+print(a," type of ",type(a))
+
+print("")
+
+a[0] = 100
+
+print(a)
+
+
+-----------
+Example 2 :
+-----------
+
+
+print('Python List Slicing : ')
+print("-----------------------")
+print("")
+
+
+a = [1,2,3,4,5]
+
+print(a[1])
+
+print(a[-1])
+
+print(a[0:3])
+
+print(a[2:])
+
+print(a[:3])
+
+print(a[::-1])
+
+
+-----------
+Example 3 :
+-----------
+
+print('Python List : ')
+print("--------------")
+print("")
+
+
+a = [1,True,'Ram',2.5,[1,2,3]]
+
+print(a,type(a))
+
+print(a[0]," is type of ",type(a[0]))
+
+print(a[1]," is type of ",type(a[1]))
+
+print(a[2]," is type of ",type(a[2]))
+
+print(a[3]," is type of ",type(a[3]))
+
+print(a[4]," is type of ",type(a[4]))
+
+print(a[4][1])
+
+print(a[4][:3])
+
+
+-----------
+Example 4 :
+-----------
+
+print('Python List Function : ')
+print("-----------------------")
+print("")
+
+
+a = [10,20,30,40,50]
+
+print(a)
+
+a.clear()
+
+print(a)
+
+a = [15,25,35,25,55,65,25,85,95]
+
+print(a)
+
+print('count (25) : ',a.count(25))
+
+print('find the index value (25) : ',a.index(25))
+
+print('Length of the value : ',len(a))
+
+print('minimum value of the variable : ',min(a))
+
+print('maximum value of the variable : ',max(a))
+
+print('sum(a) : ',sum(a))
+
+print(a)
+
+a.pop()
+
+print(a)
+
+a.pop(0)
+
+print(a)
+
+a.remove(25)
+
+print(a)
+
+
+-----------
+Example 5 :
+-----------
+
+print('Python List Function : ')
+print("-----------------------")
+print("")
+
+
+a = [1,2.5,True,"selva"]
+
+print(a)
+
+print("")
+
+a.append("kumar")
+a.append("sri")
+a.append("vali")
+a.append(5)
+
+print(a)
+
+print("")
+
+b = ["name1","name2"]
+
+print(b)
+
+print("")
+
+a.extend(b)
+
+print(a)
+
+print("")
+
+a.insert(0,"insert particula place (index)")
+
+print(a)
+
+
+-----------
+Example 6 :
+-----------
+
+print('Python List Function : ')
+print("-----------------------")
+print("")
+
+
+a = [20,10,30,20,40,50]
+
+print(a)
+
+a.sort()
+
+print(a)
+
+a.sort(reverse=True)
+
+print(a)
+
+a=["leema","beemaa","hema"]
+
+print(a)
+
+a.sort()
+
+print(a)
+
+a.sort(reverse=True)
+
+print(a)
+
+a.sort(key=len)
+
+print(a)
+
+
+

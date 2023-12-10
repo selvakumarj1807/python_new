@@ -1,0 +1,160 @@
+-----------
+Example 1 :
+-----------
+
+print(" Inheritance : ")
+print("---------------")
+print("")
+
+print(" Single inheritance : ")
+print('----------------------')
+print('')
+
+
+class nokia:
+    comany_name = "Nokia"
+    website = "www.nokia.com"
+   
+
+    def contact_details(self):
+        print("New yark")
+
+class nokia1100(nokia):
+    model_name = "Nokia_1100"
+    year = 1978
+
+    def model_detals(self):
+        print("Product name     :",self.model_name)
+        print("Manufacture date :",self.year)
+        print("Compny name      :",self.comany_name)
+        print("Website          :",self.website)
+
+
+mobile = nokia1100()
+
+mobile.model_detals()
+
+print('')
+
+mobile.contact_details()
+
+
+-----------
+Example 2 :
+-----------
+
+
+print(" Inheritance : ")
+print("---------------")
+print("")
+
+print(" Multiple inheritance : ")
+print('------------------------')
+print('')
+
+
+class father:
+    def fishing(self):
+        print("Fishing from father")
+
+    def chess(self):
+        print("Chess playing from father")
+
+class mother:
+    def cooking(self):
+        print("Cooking from mother")
+
+    def chess(self):
+        print("Chess playing from mother")
+
+class son(father,mother):
+    def riding(self):
+        print("Riding from son")
+
+o = son()
+
+o.riding()
+
+print('')
+
+o.cooking()
+
+print('')
+
+o.fishing()
+
+print('')
+
+o.chess()
+
+
+-----------
+Example 3 :
+-----------
+
+print(" Inheritance : ")
+print("---------------")
+print("")
+
+print(" Multi leve inheritance : ")
+print('--------------------------')
+print('')
+
+
+class grand_father:
+    def own_house(self):
+        print("Grand fathe build a house")
+
+class father(grand_father):
+    def own_bike(self):
+        print("Father buy the own bike")
+
+class son(father):
+    def book(self):
+        print("Son buy a book")
+
+o = son()
+
+o.book()
+
+print('')
+
+o.own_bike()
+
+print('')
+
+o.own_house()
+
+
+-----------
+Example 4 :
+-----------
+
+print(" Inheritance : ")
+print("---------------")
+print("")
+
+
+print("** Handling Diomand problem in python **")
+print('----------------------------------------')
+print('')
+
+class A:
+    def display(self):
+        print("I am a class of A")
+
+class B(A):
+    def display(self):
+        print("I am a class of B")
+
+class C(A):
+    def display(self):
+        print("I am a class of C")
+
+class D(B,C):
+    def display(self):
+        print("I am a class of D")
+
+o = D()
+
+o.display()

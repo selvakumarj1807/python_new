@@ -1,0 +1,127 @@
+-------
+Tuple :
+-------
+
+    1. Tuples are used to store multiple items in a single variable.
+            
+    2. Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+
+    3. A tuple is a collection which is ordered and unchangeable.
+
+    4. Tuples are written with round brackets ().
+
+-----------
+Example 1 :
+-----------
+
+print('Python Tuples  : ')
+print("-----------------")
+print("")
+
+
+a = (1, 2.5, True, "ram")
+
+print(a,"type of",type(a))
+
+print(a[1])
+
+print(a[-1])
+
+print(a[0:3])
+
+-----------
+Example 2 :
+-----------
+
+print('Python Tuples  : ')
+print("-----------------")
+print("")
+
+
+a = (1, 2.5, True, "ram")
+
+print(a," type of ",type(a))
+
+print("")
+
+print("A tuple is a collection which is ordered and unchangeable. So we take the type casting and add some values.")
+
+print("")
+
+b = list(a)
+
+print(b," type of ",type(b))
+
+b.append(55)
+
+b.append("vaali")
+
+print(b)
+
+a = tuple(b)
+
+print(a," type of ",type(a))
+
+
+-----------
+Example 3 :
+-----------
+
+print('Python Tuples  : ')
+print("-----------------")
+print("")
+
+
+a = (1,2,3,4,5)
+
+b = (6,7,8,9)
+
+c = a+b
+
+print('a + b : ',c)
+
+print("")
+
+d = (a,b)
+
+print('a , b : ',d)
+
+print("")
+
+print('d[0] : ',d[0])
+
+print("")
+
+print('d[1] : ',d[1])
+
+print("")
+
+print('d[0][2] : ',d[0][2])
+
+
+-----------
+Example 4 :
+-----------
+
+print('Python Tuples  : ')
+print("-----------------")
+print("")
+
+
+a = (1, 2.5, True, "ram")
+
+
+for i in a:
+    
+    print(i)
+
+print("***************")
+print("")
+
+if "ra" in a:
+    
+    print("yes")
+    
+else:
+    
+    print("No")

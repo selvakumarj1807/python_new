@@ -1,0 +1,137 @@
+-----------
+Example 1 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+import datetime as dt
+
+current_date = dt.date.today()
+
+print("Current date is :",current_date)
+
+
+-----------
+Example 2 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+import datetime as dt
+
+new = dt.date(2023,10,10)
+
+print('Date : ',new)
+
+print('Day : ',new.day)
+
+print('Month : ',new.month)
+
+print('Year : ',new.year)
+
+
+-----------
+Example 3 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+import datetime as dt
+
+time = dt.time(10,45,5,55)
+
+print('Time : ',time)
+
+print('Hour : ',time.hour)
+
+print('Minute : ',time.minute)
+
+print('Second : ',time.second)
+
+print('Micro Second : ',time.microsecond)
+
+
+-----------
+Example 4 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+import datetime as dt
+
+current_time = dt.datetime.now()
+
+print('Current Date Time : ',current_time)
+
+
+-----------
+Example 5 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+import datetime as dt
+
+new_datetime = dt.datetime(2023,5,11,8,25,8,38)
+
+print('Date and Time : ',new_datetime)
+
+print('Date : ',new_datetime.date())
+
+print('Time : ',new_datetime.time())
+
+
+-----------
+Example 6 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+
+print("**Difference between two year**")
+print("-------------------------------")
+print("")
+
+import datetime as dt
+
+current_date = dt.datetime.now()
+
+new_date = dt.datetime(2024,10,18)
+
+difference = new_date - current_date
+
+print('Difference between two days : ',difference)
+
+
+-----------
+Example 7 :
+-----------
+
+print("Date time package in python : ")
+print("------------------------------")
+
+
+print("** date format **")
+print("-----------------")
+print("")
+
+import datetime as dt
+
+current_date = dt.datetime.now()
+
+print('Current Date  : ',current_date)
+
+format_date = current_date.strftime("%A %B %d %Y")
+
+formatted_date = current_date.strftime("%d %B %Y")
+
+print('Date Format 1 : ',format_date)
+
+print('Date Format 2 : ',formatted_date)
+
